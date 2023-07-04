@@ -58,6 +58,7 @@ a{
     font-family: inherit;
     padding-bottom: 10px;
     padding-top: 10px;
+    cursor: pointer;
   }
   .dropbtn:hover {
   color: rgb(235,93,30);
@@ -90,5 +91,10 @@ a{
     background-color: rgb(235,93,30);
     padding: 10px 25px;
     border-radius: 50px;
+    cursor: pointer;
+    color: white;
+  }
+  .getStarted:hover{
+    background-color: rgb(242, 127, 77);
   }
   /**/
