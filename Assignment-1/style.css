@@ -59,6 +59,10 @@ a{
     padding-bottom: 10px;
     padding-top: 10px;
   }
+  .dropbtn:hover {
+  color: rgb(235,93,30);
+  transition: 0.3s;
+}
   .dropdown-content {
     display: none;
     position: absolute;
