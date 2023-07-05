@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -15,14 +20,19 @@ a{
     box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
     position: sticky;
 }
-
+.navBar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 .site-logo{
     font-size: 30px;
     font-weight: 300;
     color: rgb(86, 84, 83);
     letter-spacing: 2px;
     margin-left: 40px;
-    
+    cursor: pointer;
 }
 
 .nav-pages ul{
@@ -30,13 +40,13 @@ a{
     gap: 30px;
     padding-top: 18px;
     padding-bottom: 18px;
-    margin-right: 40px;
     color: rgb(86, 84, 83);
     align-items: center;
 }
 .nav-pages ul li{
     list-style: none;
     display: flex;
+    
 }
 .nav-pages ul li a:hover{
     transition: 0.3s;
@@ -53,6 +63,10 @@ a{
   float: center;
   padding-left: 10px;
 }
+.dropdown i{
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -63,8 +77,14 @@ a{
     padding-bottom: 10px;
     padding-top: 10px;
     cursor: pointer;
+    display: flex;
+    border: 1px solid green;
+    width: 100%;
     align-items: center;
   }
+.dropdown a{
+  border: 1px solid blue;
+}
   .dropbtn:hover {
   color: rgb(235,93,30);
   transition: 0.3s;
@@ -90,15 +110,12 @@ a{
     left: 160px;
     top: 40px;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 170px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.2);
     z-index: 1;
   }
-  .dropdown-content2 a{
-display: block;
-  }
-
  
+
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
     display:block;
