@@ -57,7 +57,7 @@ a{
     transition: 0.3s;
     color: rgb(235,93,30);
 }
-  
+  /* start of drop down menu style */
 
 ul.drop{
   width: 10em;
@@ -103,7 +103,7 @@ ul.deep-drop{
   .dropdown2:hover .dropdown-content2 {
     display:block;
   } 
-/* End of Dropdown style  */
+/* End of Dropdown menustyle  */
   .getStarted{
     border: none;
     background-color: rgb(235,93,30);
@@ -159,8 +159,10 @@ ul.deep-drop{
 
   }
 
-/* end of hero section */
+
 .right img{
   max-width: 100%;
   height: auto;
 }
+
+/* end of hero section */
