@@ -48,7 +48,10 @@ a{
 .dropdown {
     float: left;
   }
-
+.dropdown2{
+  float: center;
+  padding-left: 10px;
+}
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -59,6 +62,7 @@ a{
     padding-bottom: 10px;
     padding-top: 10px;
     cursor: pointer;
+    align-items: center;
   }
   .dropbtn:hover {
   color: rgb(235,93,30);
@@ -79,12 +83,28 @@ a{
   .dropdown-content a:hover {
     color: rgb(235,93,30);
   }
+  .dropdown-content2{
+    display: none;
+    position: absolute;
+    left: 160px;
+    top: 40px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content2 a{
+display: block;
+  }
 
+ 
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
     display:block;
   }
-
+  .dropdown2:hover .dropdown-content2 {
+    display:block;
+  }
 
   .getStarted{
     border: none;
