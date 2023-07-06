@@ -75,11 +75,9 @@ ul.drop{
   visibility: hidden;
   position: absolute;
   background-color: var(--primary-color-white);
-  opacity: 0;
   box-shadow: 0 0 2em #00000012;
   padding: 1em;
   text-transform: capitalize;
-
 }
 ul.drop li{
   display: flex;
@@ -140,8 +138,6 @@ ul.deep-drop{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  
-  
 }
 .left{
   display: block;
@@ -173,14 +169,14 @@ ul.deep-drop{
 .right img{
   max-width: 100%;
   height: auto;
-  
+  z-index: inherit;
   animation: bouncingAnimation 1s;            /*animating the image STARTS here    */
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 @keyframes bouncingAnimation {
   from{transform:translate3d(0,0,0)}
-  to{transform: translate3d(0,20px,0);}
+  to{transform: translate3d(0,15px,0);}
 }                                             /*animating the image ENDS here    */
 
 /* end of hero section */
