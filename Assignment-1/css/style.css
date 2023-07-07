@@ -272,10 +272,6 @@ line-height: 1.2;
   display: flex;
   overflow: hidden;
 }
-.services .container{
-  
-  
-}
 .services .container h2{
   font-size: 24px;
   font-weight: 700;
@@ -336,6 +332,7 @@ line-height: 1.2;
 /* start of portfolio section */
 .portfolio{
   display: block;
+  background-color: var(--primary-color-white);
 }
 .portfolio .container{
   align-items: center;
@@ -453,3 +450,41 @@ visibility: visible;
   color: var(--primary-color-white);
 }
 /* end of portfolio code */
+
+/* start of faq section */
+.faq{
+  background-color: var(--secondary-color-xlight-bg);
+}
+.paragraphs{
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.paragraph1{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+.faq .container i{
+  font-size: 15px;
+  color: var(--primary-color-dark);
+}
+.faq .container .paragraphs .paragraph1 p{
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.faq .container .paragraphs p {
+  border-bottom: 1px solid #eae7e5;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 100%;
+  display:flex;
+  gap: 0.5rem;  
+}
+
+/* end of faq section */
+
+/* start of team */
+
+/* end of team */
