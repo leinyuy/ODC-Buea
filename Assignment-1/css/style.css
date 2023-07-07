@@ -1,7 +1,12 @@
 :root{
   --primary-color-dark:#4e4039;
+  --primary-color-medium-dark:#7a6960;
+  --primary-color-xmedium-dark:#c2b7b1;
+  --primary-color-light-dark:#5a6570;
   --primary-color-white:#ffffff;
   --secondary-color-thick:#eb5d1e;
+  --secondary-color-mdlight:#f39e7a;
+  --secondary-color-mdlight2:#ef7f4d;
   --secondary-color-light:#fcebe3;
   --secondary-color-xlight-bg:#fef8f5;
 }
@@ -22,7 +27,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+i{
+  line-height: 1rem;
+}
+section{
+  padding: 60px 0;
+}
 /* Start of navbar */
 .navBar{
     display: flex;
@@ -32,6 +42,7 @@ a{
     box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 .navBar .container{
   display: flex;
@@ -140,7 +151,7 @@ ul.deep-drop{
   align-items: center;
 }
 .left{
-  display: block;
+  width: 100%;
 }
 .left h1{
     text-transform: capitalize;
@@ -169,14 +180,145 @@ ul.deep-drop{
 .right img{
   max-width: 100%;
   height: auto;
-  z-index: inherit;
-  animation: bouncingAnimation 1s;            /*animating the image STARTS here    */
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  z-index: inherit;            /*animating the image STARTS here    */
+  
 }
-@keyframes bouncingAnimation {
+.right .animated{
+  animation: bounce 2s ease-in-out infinite alternate-reverse both;
+}
+.fluid{
+  max-width: 100%;
+  height: auto;
+}
+@keyframes bounce {
   from{transform:translate3d(0,0,0)}
   to{transform: translate3d(0,15px,0);}
 }                                             /*animating the image ENDS here    */
 
 /* end of hero section */
+
+/* start of about section code */
+.about{
+  display: flex;
+}
+.about .container{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  align-items: center;
+}
+.about .container .right{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.about .container .left img{
+  width: 100%;
+}
+.about .container .right h3{
+font-weight: 700;
+font-size: 34px;
+color: var(--primary-color-dark);
+margin-bottom: 0.5rem;
+line-height: 1.2;
+
+}
+.about .container .right p{
+  color: var(--primary-color-light-dark);
+  font-size: 15px;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.right-row2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 100%;
+}
+.right-row2 i{
+  color: var(--secondary-color-mdlight);
+  margin-top: 15px;
+  font-size: 48px;
+}
+.right-row2 h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  color: var(--primary-color-medium-dark);
+  margin-bottom: .5rem;
+  line-height: 1.2rem;
+}
+.right-row2 p{
+  font-size: 15px;
+  color: var(--primary-color-light-dark);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/* end of about section code */
+
+/* start of services section */
+.services{
+  background-color: var(--secondary-color-xlight-bg);
+  display: flex;
+  overflow: hidden;
+}
+.services .container{
+  
+  
+}
+.services .container h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 15px;
+  color: var(--primary-color-xmedium-dark);
+  text-align: center;
+}
+.services .container i{
+  font-size: 48px;
+  color: var(--secondary-color-mdlight2);
+}
+.services-heading-p{
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color-dark);
+}
+.services .container hr{
+  width: 60px;
+  color: black;
+  border: 2px solid var(--secondary-color-thick);
+  margin: 0 auto;
+
+}
+.rectangles{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.rectangle{
+  background-color: var(--primary-color-white);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  border-bottom: 3px solid var(--primary-color-white);
+}
+.rectangle a{
+  padding-top: 1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.rectangle p{
+  line-height: 1.5rem;
+  font-size: 15px;
+  padding: 1rem;
+}
