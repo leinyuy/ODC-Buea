@@ -365,7 +365,7 @@ color: var(--secondary-color-thick);
 }
 .img-row>div{
   border-radius: 20px;
-  height: 20em;
+  height: auto;
   overflow: hidden;
   position: relative;
   
@@ -396,7 +396,7 @@ color: var(--secondary-color-thick);
   left: 0;
   z-index: 3;
   
-}                                                 /*portfolio images and hover ends here*/
+}                                                 
 .active{
   color: var(--secondary-color-thick);
 }
@@ -486,5 +486,128 @@ visibility: visible;
 /* end of faq section */
 
 /* start of team */
+.team{
+  background-color: var(--primary-color-white);
+}
+.team .container{
+  align-items: center;
+}
+.team .container .img-row{
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  justify-content: center;
+}
 
+.team .container .img-row .img-row2{
+border-radius: 0;
+}
+
+.img-row>.img-row2::after{
+  content: '';
+  height: 100%;
+  transition: .3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgb(0, 0, 0));
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.img-row>.img-row2:hover::after{
+bottom: 0;
+}
+
+.name2{
+  position: absolute;
+  bottom: 10%;
+  left:80%;
+  transform: translate(-80%, 52%);
+  align-items: center;
+  text-align: center;
+  color: white;
+  transition: .3s ease;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.img-row>.img-row2:hover .name2{
+  visibility: visible;
+  transition:.5s;
+  opacity: 1;
+  bottom: 30%;
+  left: 80%;
+}
+
+.img-row>.img-row2 .hover-text .lnks2 i{
+  font-size: 20px;
+  background-color: none;
+  color: var(--primary-color-white);
+  border-radius: 50%;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  z-index: 6;
+  position: relative;
+ 
+}
+.img-row>.img-row2 .hover-text .lnks2 {
+float: left;
+  visibility: hidden;
+  position: absolute;
+  left: -100%;
+  background-color: #4e40396b;
+  height: 100%;
+  padding: 0.5rem;
+}
+.img-row>.img-row2:hover .hover-text .lnks2{
+visibility: visible;
+left: 0rem;
+transition: .5s;
+}
+
+.img-row>.img-row2 .hover-text .lnks2 i:hover{
+  color: var(--secondary-color-thick);
+}
 /* end of team */
+/* start of clients section */
+.clients .container{
+  justify-content: center;
+  align-items: center;
+}
+.clients .container .team-images{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+justify-content: center;
+gap: 2.5rem;
+margin-top: 2rem;
+}
+.clients .container .team-images img{
+  margin: 0 auto;
+  width: 80px;
+  opacity: 0.5;
+
+  }
+  .clients .container .team-images img:hover{
+    opacity: 1;
+    }
+
+  .clients .container p{
+    padding-top: 0.8rem;
+  }
+  .circles{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color-white);
+  border: 2px solid var(--secondary-color-thick);
+  margin: 10px;
+}
