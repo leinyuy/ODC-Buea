@@ -44,6 +44,11 @@ section{
     top: 0;
     z-index: 10;
 }
+.fa-bars{
+  visibility: hidden;
+  position: absolute;
+  right: 3rem;
+}
 .navBar .container{
   display: flex;
   justify-content: space-between;
@@ -614,6 +619,9 @@ margin-top: 2rem;
 
 /* start of responsiveness */
 @media (max-width: 991px) {
+  .fa-bars{
+    visibility: visible;
+  }
   .navBar{
     display: flex;
     padding: 1rem;
@@ -645,7 +653,18 @@ margin-top: 2rem;
     margin-top: 2rem;
   }
   .about .container .right .right-row2{
-    display: block;
+    display: flex;
+  }
+  .services .container .rectangles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .serve
+}
+
+@media (max-width: 742px) {
+  .about .container .right .right-row2 {
+  display: block;
   }
   .services .container .rectangles{
     display: block;
