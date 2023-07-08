@@ -612,6 +612,101 @@ ul.deep-drop {
   margin: 10px;
 }
 
+/* start of contact section */
+.contact .container .contact-boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.contact-boxes{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.box1{
+  border-top: 3px solid var(--secondary-color-thick);
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.contact{
+  background-color: white;
+}
+.contact .container i{
+  font-size: 30px;
+}
+
+.icon-text{
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  
+}
+.location-det{
+  display: flex;
+}
+.location-det-right{
+  display: grid;
+  gap: 1.5rem;
+  margin-left: 1rem;
+}
+.describe-text{
+  justify-content: flex-start;
+  
+}
+.describe-text h3{
+  color: var(--primary-color-dark);
+}
+.describe-text p{
+  color: var(--primary-color-medium-dark);
+}
+.embedded-map{
+  margin-top: 2rem;
+}
+
+/* start of form */
+form{
+  width: 100%;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary-color-medium-dark);
+  margin-top: 1rem;
+}
+input:focus{
+  outline-color: var(--primary-color-light-dark);
+  outline-width: 1px;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+textarea:focus{
+  outline-color: var(--primary-color-light-dark);
+  outline-width: 1px;
+}
+
+#send-message {
+  background-color: var(--secondary-color-thick);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}
+/* end of form */
+/* end of contact section */
+
+
 /* start of responsiveness */
 @media (max-width: 991px) {
   .fa-bars {
