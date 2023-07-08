@@ -611,3 +611,43 @@ margin-top: 2rem;
   border: 2px solid var(--secondary-color-thick);
   margin: 10px;
 }
+
+/* start of responsiveness */
+@media (max-width: 991px) {
+  .navBar{
+    display: flex;
+    padding: 1rem;
+  }
+  .navBar .container{
+    justify-content: space-between;
+  }
+  .navBar .container ul{
+    display: none;
+  }
+  .hero-section .container{
+   display: block;
+  }
+  .hero-section .container h1{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .about .container{
+    display: block;
+    overflow: visible;
+  }
+  .about .container .left, .about .container .right{
+    justify-content: flex-start;
+  }
+  .about .container .right h3{
+    font-size:34px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+  .about .container .right .right-row2{
+    display: block;
+  }
+  .services .container .rectangles{
+    display: block;
+  }
+}
