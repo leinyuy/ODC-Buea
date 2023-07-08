@@ -760,4 +760,7 @@ textarea:focus{
   .services .container .rectangles {
     display: block;
   }
+  .contact .container .contact-boxes{
+    display: block;
+  }
 }
