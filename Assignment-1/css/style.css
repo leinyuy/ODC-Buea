@@ -179,6 +179,9 @@ ul.deep-drop {
   cursor: pointer;
   color: white;
 }
+.getStarted2:hover{
+  opacity: .85;
+}
 
 .right img {
   max-width: 100%;
@@ -483,8 +486,11 @@ ul.deep-drop {
   width: 100%;
   display: flex;
   gap: 0.5rem;
+  cursor: pointer;
 }
-
+.faq .container .paragraphs p:hover {
+  color: var(--secondary-color-thick);
+}
 /* end of faq section */
 
 /* start of team */
@@ -702,6 +708,9 @@ textarea:focus{
   border-radius: 10px;
   text-align: center;
   margin-top: 1rem;
+}
+#send-message:hover{
+  opacity:.85;
 }
 /* end of form */
 /* end of contact section */
